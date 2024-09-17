@@ -1,0 +1,101 @@
+.contactWrapper {
+  width: 100vw;
+  height: calc(100vh - var(--header-height));
+  background-color: #f7f7f7;
+
+  .contact {
+    width: 100vw;
+    max-width: 400px;
+    margin: 100px auto;
+    background-color: white;
+    border-radius: var(--border-radius);
+    padding: 20px 20px 30px;
+    width: 100%;
+    box-shadow: var(--box-shadow);
+
+    h1 {
+      text-transform: uppercase;
+      font-size: 3rem;
+      font-weight: bold;
+      margin-bottom: 5px;
+      color: var(--text);
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    form {
+      fieldset {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+
+        input {
+          border: 2px solid var(--border-color);
+          width: 100%;
+          margin-bottom: 15px;
+          height: 40px;
+          padding: 0 15px;
+          border-radius: var(--border-radius);
+          background-color: var(--border-color);
+          outline: none;
+          transition: border-color 0.2s;
+
+          &:hover {
+            border-color: #d7d6d6;
+          }
+
+          &:focus {
+            border-color: var(--accent);
+          }
+        }
+
+        textarea {
+          border: 2px solid var(--border-color);
+          width: 100%;
+          margin-bottom: 20px;
+          min-height: 150px;
+          padding: 10px 15px;
+          background-color: var(--border-color);
+          border-radius: var(--border-radius);
+          outline: none;
+          resize: none;
+          transition: border-color 0.2s;
+
+          &:hover {
+            border-color: #d7d6d6;
+          }
+
+          &:focus {
+            border-color: var(--accent);
+          }
+        }
+      }
+
+      button {
+        width: 100%;
+        height: 40px;
+        border-radius: var(--border-radius);
+        background-color: var(--accent);
+        color: white;
+        font-weight: bold;
+        font-size: 1rem;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    background-color: white;
+
+    .contact {
+      box-shadow: none;
+      margin-top: 20px;
+
+      h1 {
+        font-size: 2rem;
+      }
+    }
+  }
+}

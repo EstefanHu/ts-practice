@@ -1,0 +1,99 @@
+$mobileWidth: 414px;
+
+.body {
+  header {
+    width: 100vw;
+    height: var(--header-height);
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+
+    h1 {
+      font-size: 1.5rem;
+      font-weight: bold;
+      transition: color 0.2s;
+
+      &:hover {
+        color: var(--accent);
+      }
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      height: 100%;
+      width: fit-content;
+
+      a {
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 0.75rem;
+        transition: color 0.2s;
+        color: var(--text);
+        padding: 4px 8px;
+
+        &:hover {
+          color: var(--accent);
+        }
+      }
+
+      // @media screen and (max-width: $mobileWidth) {
+      //   display: none;
+      // }
+    }
+  }
+
+  .mobileNavigation {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    height: 60px;
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    border-top: 1px solid var(--border-color);
+
+    a {
+      width: 50px;
+      height: 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: var(--text);
+
+      svg {
+        height: 25px;
+        width: 25px;
+      }
+    }
+
+    // @media screen and (max-width: $mobileWidth) {
+    //   display: flex;
+    // }
+  }
+
+  .favicon {
+    display: none;
+    width: 35px;
+    height: 35px;
+
+    .faviconWrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: inherit;
+      width: inherit;
+    }
+
+    // @media screen and (max-width: $mobileWidth) {
+    //   display: block;
+    // }
+  }
+}

@@ -1,0 +1,49 @@
+.post {
+  width: 100%;
+  margin-bottom: 40px;
+  //   outline: none;
+
+  & > * {
+    margin: 0 15px;
+  }
+
+  .header {
+    z-index: 1;
+    font-weight: bold;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    line-height: 8px;
+    color: var(--text);
+
+    span {
+      color: var(--accent);
+    }
+  }
+
+  h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    margin-bottom: 5px;
+  }
+
+  p {
+    font-size: 1.1rem;
+  }
+
+  @media screen and (max-width: 600px) {
+    margin-bottom: 30px;
+
+    .header {
+      font-size: 0.6rem;
+    }
+
+    h3 {
+      font-size: 1.3rem;
+    }
+
+    p {
+      font-size: 1rem;
+    }
+  }
+}
